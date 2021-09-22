@@ -1,8 +1,6 @@
 <h1><%=@garden.name %></h1>
-<%@plots.each do |plot|%>
-<% plot.plants_to_harvest.each do |plant| %>
+<%@plants.plants_to_harvest.each do |plant| %>
 <ul>
-  <li> <%=plant.name%> </li>
+  <li> <%=plant.name %> </li>
 </ul>
-<% end %>
-<% end %>
+<%end%>
