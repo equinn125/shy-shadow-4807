@@ -35,5 +35,7 @@ RSpec.describe ' the plots index' do
       click_on "Delete plot#{@plot_1.number}"
       expect(current_path).to eq('/plots')
       expect(page).to_not have_content(@plot_1.number)
+      expect(page).to_not have_content(@plant_1.name)
+      expect(page).to_not have_content(@plant_2.name)
   end
 end
