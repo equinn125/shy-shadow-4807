@@ -13,7 +13,7 @@ RSpec.describe 'the garden show page' do
 
   it 'shows the garden attribute all its plants and plots' do
     visit "/gardens/#{@garden.id}"
-
+    save_and_open_page
     expect(page).to have_content(@garden.name)
     expect(page).to have_content(@plant_1.name)
     expect(page).to have_content(@plant_2.name)

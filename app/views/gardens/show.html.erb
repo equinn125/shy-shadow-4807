@@ -1,8 +1,8 @@
 <h1><%=@garden.name %></h1>
-<%@garden.plots.each do |plot| %>
-<%plot.plants.each do |plant| %>
+<%@plots.each do |plot|%>
+<% plot.plants.each do |plant| %>
 <ul>
-  <li> <%=plant.name  %> </li>
+  <li> <%=plant.name%> </li>
 </ul>
 <% end %>
 <% end %>
