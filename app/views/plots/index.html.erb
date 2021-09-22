@@ -11,5 +11,6 @@
   <li>Plant: <%=plant.name %> </li>
 </ul>
 <% end %>
+<%= button_to "Delete plot#{plot.number}", "/plots/#{plot.id}", method: :delete %>
 <% end %>
 </section>
